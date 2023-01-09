@@ -1,3 +1,5 @@
+Original source https://github.com/JulienMousset/Gif-Converter
+
 # Movie->Gif/WEBP
 
 비디오 파일을 GIF와 WEBP 파일로 수정
