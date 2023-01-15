@@ -10,4 +10,7 @@
 converter py 파일의 첫 부분을 수정: `clip = os.path.abspath('PinguinMeme.mp4')`
 
 
-https://github.com/JulienMousset/Gif-Converter
+* 파일 지정이 아닌 폴더 지정으로
+* 유효한 파일 형식 전부를 변경 가능하게
+
+원본 https://github.com/JulienMousset/Gif-Converter
