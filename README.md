@@ -1,4 +1,3 @@
-Original source https://github.com/JulienMousset/Gif-Converter
 
 # Movie->Gif/WEBP
 
@@ -9,3 +8,6 @@ Original source https://github.com/JulienMousset/Gif-Converter
 
 
 converter py 파일의 첫 부분을 수정: `clip = os.path.abspath('PinguinMeme.mp4')`
+
+
+https://github.com/JulienMousset/Gif-Converter
