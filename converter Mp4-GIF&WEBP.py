@@ -1,10 +1,7 @@
-from pathlib import Path as pt
+from pathlib import Path
 from PIL import Image
 import imageio
 import os
-
-clip = os.path.abspath('PinguinMeme.mp4')
-
 
 def gifConverter(inputPath, targetFormat):
     outputPath = os.path.splitext(inputPath)[0] + targetFormat
@@ -17,17 +14,19 @@ def gifConverter(inputPath, targetFormat):
 
     for frames in reader:
         writer.append_data(frames)
-        print(f'Frame {frames}')
-    print('Gif Done!')
     writer.close()
+    return outputPath
 
 
-gifConverter(clip, '.gif')
+if __name__ == '__main__':
+    path = Path(os.path.abspath('')) # path!! 
+    ext = os.path.splitext(os.path.basename(path))[-1].replace('.', '')
 
-src_f = pt(clip.strip(".mp4")+'.gif')
-dst_f = pt(src_f).with_suffix('.webp')
+    if ext.lower() == 'mp4':
+        path = Path(gifConverter(path, '.gif'))
 
-quali = {'quality': 90} 
+    destination = path.with_suffix(".webp")
+    image = Image.open(path)  # Open image
+    quali = {'quality': 90}
+    image.save(destination, format="webp", **quali, save_all=True)
 
-Image.open(src_f).save(dst_f, 'webp', **quali, save_all=True)
-print('Webp Done!')
