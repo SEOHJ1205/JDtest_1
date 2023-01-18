@@ -10,9 +10,6 @@
 - pip install Pillow
 - pip install imageio
 
-converter py 파일의 첫 부분을 수정: `clip = os.path.abspath('PinguinMeme.mp4')`
+folder_path = '' 이미지 파일이 들어있는 폴더 위치를 입력
 
-목표
-* 파일 지정이 아닌 폴더 지정으로 
-* 유효한 파일 형식 전부를 변경 가능하게
 
